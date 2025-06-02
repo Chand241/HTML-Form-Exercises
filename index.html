@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Addmission Form make</title>
+    <link rel="stylesheet" href="image/style.css">
+</head>
+<body>
+
+<hr>
+<form action="" id="admission-form" onsubmit="return validateForm(event)">
+    <fieldset>
+<h1 style="color:brown; text-align: center">UNIVERSITY ADDMISSION FORM</h1>
+
+ <fieldset >
+    <legend>Genarel Information</legend>
+<div>
+    <label for="applicant">applicant  Type :</label>
+    <select id="applicant" name="applicant" required>
+<option value="" selected disabled>Selecte one</option>
+<option value="">Local Student(Bangladeshi)</option>
+<option value="International">International Student</option>
+</select>
+</div>
+<br>
+<div>
+    <label for="program">Select Program :</label>
+    <select id="program" name="program" required >
+<option value="" selected disabled>select one</option>
+<option value="cse">BSc in CSE</option>
+<option value="swe">BSc in SWE</option>
+<option value="eee">BSc in EEE</option>
+<option value="ete">BSc in ETE</option>
+</select>
+</div>
+</fieldset>
+
+<hr>
+    <fieldset>
+        <legend>Personal Information</legend>
+
+    <div>
+        <label for="">Student name:</label>
+       <input type="text" id="name" name="name" placeholder="Enter Your Cirtificate name:"required />
+    </div>
+    <br>
+    <div>
+        <label for="">Father name-: </label>
+        <input type="text" id="" name="" placeholder="Father name" required/>
+    </div>
+    <br>
+    <div>
+        <label for="">Mother name:</label>
+        <input type="text" id="" name="" placeholder="Mother name" required/>
+    </div>
+<br>
+    <div>
+        <label for="">Date of Birth</label>
+        <input  min="2000-01-01" max="2005-01-01" type="date" id="date" name="date" required/>
+    </div>
+
+    <br>
+    <div>
+        <label for="">Select Gender:</label>
+        <select name="gender" id="gender" required>
+            <option value=""selected disabled>gender</option>
+            <option value="male">Male</option>
+            <option value="female">Femele</option>
+            <option value="others">Others</option>
+         required</select>
+    
+    </div>
+    <br>
+    <div>
+        <label for="text">Nationality</label>
+        <input type="text" id="Nationality" name="Nationality" placeholder="Nationlity" required>
+    </div>
+
+    <br>
+    <div>
+        <label for="text">Religion:</label>
+        <select name="Religion" id="Religion" required>
+            <option value="" selected disabled>religion</option>
+            <option value="islam">Islam</option>
+            <option value="hinduism">Hinduism</option>
+            <option value="Others">Others</option>
+        </select>
+    
+    </div>
+
+    <br>
+    <div>
+        <label for="text">Marital Status :</label>
+        <select name="Marital-Status " id="Marital-Status " required>
+              <option value="" selected disabled>status</option>
+            <option value="">Unmarried</option>
+            <option value="">Marrid</option>
+            <option value="">Divorced</option>
+        </select>
+    
+    </div>
+ </fieldset>
+<hr>
+<fieldset>
+    <legend>Contact Information</legend>
+    <div>
+        <label for="Addess">Present Addess</label>
+       <input type="text" id="Addess" name="Addess" placeholder="Present Addess" required>
+    </div>
+    <br>
+    <div>
+        <label for="Addess">Permanent Addess</label>
+       <input type="text" id="Addess" name="Addess" placeholder="Permanent Addess" required>
+    </div>
+
+    <br>
+    <div>
+        <label for="text">Phone Number:</label>
+        <input type="tel" id="phone" name="phone" placeholder="Phone Number" required>
+    </div>
+</fieldset>
+
+<hr>
+<fieldset>
+    <legend>Educational Qualifications</legend>
+    <div>
+        <label for="text">SSC Result:</label>
+        <input type="text" id="ssc" name="ssc" placeholder="5.00" required>
+    </div>
+    <br>
+    <div>
+        <label for="text">HSC Result:</label>
+        <input type="text" id="hsc" name="hsc" placeholder="5.00" required>
+    </div>
+    <br>
+    <div>
+        <label for="">Education Board</label>
+        <select name="board" id="board">
+              <option value="" selected disabled>board</option>
+            <option value="">Dhaka</option>
+            <option value="">Chittagong</option>
+            <option value="">Rajshahi</option>
+            <option value="">Khulna</option>
+            <option value="">Barisal</option>
+            <option value="">Sylhet</option>
+            </select>
+        
+    </div>
+    <br>
+        <div>
+            <label for="text">HSC Group:</label>
+            <select name="group" id="group" required>
+                <option value="" selected disabled>group</option>
+                <option value="">Science</option>
+                <option value="">Commerce</option>
+                <option value="">Arts</option>
+            </select>
+        </div>
+        <br>
+        <div>
+            <label for="text">HSC Passing Year:</label>
+            <input type="number" id="year" name="year" placeholder="2023" required>
+        </div>
+        </fieldset>
+
+<hr>
+
+    <fieldset>
+        <legend>Upload Documents</legend>
+        <div>
+           <label for="photo">Uplode Your Photo:<mark style="background: yellow;">image</mark></label>
+           <input type="file" id="photo" name="photo" accept="image/*" required/>
+        </div>
+        <br>
+        <div>
+            <label for="ssc-certificate">Upload Your SSC Certificate:<mark style="background: yellow;">pdf</mark></label>
+            <input type="file" id="certificate" name="certificate" accept=".pdf" required>
+        </div>
+        <br>
+        <div>
+            <label for="hsc-certificate">Upload Your HSC Certificate:<mark style="background: yellow;">pdf</mark></label>
+            <input type="file" id="hsc-certificate" name="hsc-certificate" accept=".pdf" required>
+        </div>
+        <br>
+         <div>
+            <label for="nid">Upload your NID/Bith Cirtificate:<mark style="background: yellow;">pdf</mark></label>
+            <input type="file" id="nid" name="nid" accept=".pdf" required>
+        </div>
+        <br>
+        <div>
+            <label for="signature">Upload Your Signature:<mark style="background: yellow;">image</mark></label>
+            <input type="file" id="signature" name="signature" accept="image/*" required>
+        </div>
+        <br>
+    </fieldset>
+<hr>
+
+<h3>Applicants Declaration:</h3>
+<input type="checkbox" id="checkbox" name="checkbox" required/>I hereby declare that the information provided in this application form is true and correct to the best of my knowledge. I understand that any false information may lead to disqualification from the admission process.<br><br>
+
+<div style="text-align:center;
+ margin-top: 20px; 
+ margin-bottom: auto;
+padding:10px; ;
+">
+    <input type="submit" value="Submit Application" 
+  style="background-color: rgb(0, 0, 0); color: rgb(224, 198, 93);font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;font-size : 30px"
+  />
+
+</div>
+
+</fieldset>
+</form>
+<!--Script-->
+<script>
+  function validateForm(event) {
+    // Prevent default form submit
+    event.preventDefault();
+
+    // Get the form
+    const form = document.getElementById('admission-form');
+
+    // Check if all required fields are filled
+    if (form.checkValidity()) {
+      alert('Submit Successful!');
+      form.submit(); // Now actually submit the form
+    } else {
+      // If not valid, trigger browser's validation message
+      form.reportValidity();
+    }
+
+    return false; // Prevent double submit
+  }
+</script>
+
+</body> 
+</html>
